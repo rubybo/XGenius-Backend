@@ -1,1 +1,0 @@
-import{_ as r,r as a,o as n,c as s,a as c}from"./index-8254f191.js";const i={name:"App",watch:{$route:{immediate:!0,handler(e,t){document.title=e.meta.title||"XGenius - Trials"}}}};function l(e,t,m,p,_,u){const o=a("Router-view");return n(),s("div",null,[c(o)])}const f=r(i,[["render",l]]);export{f as default};
