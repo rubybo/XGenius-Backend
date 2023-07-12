@@ -1,0 +1,1 @@
+import{o as a,c}from"./index-cb971fcb.js";const o={name:"App",watch:{$route:{immediate:!0,handler(e,t){document.title=e.meta.title||"XGenius - F.A.Q"}}}},s=Object.assign(o,{setup(e){return(t,r)=>(a(),c("div"))}});export{s as default};

@@ -1,0 +1,1 @@
+import{_ as n,r,o as a,c as s,a as c}from"./index-cb971fcb.js";const i={name:"App",watch:{$route:{immediate:!0,handler(e,t){document.title=e.meta.title||"XGenius - Reviews"}}}};function m(e,t,p,_,u,l){const o=r("Router-view");return a(),s("div",null,[c(o)])}const f=n(i,[["render",m]]);export{f as default};
