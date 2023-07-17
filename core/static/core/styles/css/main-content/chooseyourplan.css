@@ -1,0 +1,147 @@
+.box_trials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.btn-submit {
+  max-width: 183px;
+  margin: 20px auto;
+}
+
+.btn-submit a {
+  color: white;
+}
+
+.trial {
+  width: 438px;
+  border: 1px solid #F6F6F6;
+  background: #FFF;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.trial-plan {
+  max-width: 120px;
+  margin-top: 60px !important;
+  margin: 0 auto;
+  color: #111;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.trial-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+.trial-price-amount {
+  color: #DDA74F;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.trial-price-time {
+  color: rgba(34, 34, 34, 0.5);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  padding-bottom: 10px;
+}
+.trial-check-usage {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 40px;
+  color: #222;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+.trial-check-usage img {
+  margin-right: 8px;
+}
+.trial_title {
+  padding-top: 60px;
+  position: relative;
+  max-width: 490px;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 63px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  margin-bottom: 80px;
+}
+.trial-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(34, 34, 34, 0.5);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.trial-btn {
+  max-width: 151px;
+  background: #DDA74F;
+  margin: 20px auto;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  padding: 16px 24px;
+}
+.trial-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-family: Roboto;
+  color: white;
+}
+.trial-btn:hover {
+  max-width: 70%;
+  width: 100%;
+  border-radius: 15px;
+}

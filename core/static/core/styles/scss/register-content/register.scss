@@ -1,0 +1,100 @@
+#reg {
+    background: #222;
+}
+
+.registration {
+    padding: 190px 0px;
+    max-width: 560px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.reg {
+    &-flex {
+        display: flex;
+        flex-direction: row;
+        max-width: 560px;
+    }
+
+    &-title {
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+        color: #DDA74F;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Roboto Slab;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 100px;
+    }
+
+    &-input {
+        max-width: 470px;
+        width: 100%;
+
+        input {
+            text-align: center;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #f6f6f6;
+            background: none;
+            margin-bottom: 60px;
+
+            color: rgba(246, 246, 246, 0.50);
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Roboto Slab;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.56px;
+        }
+    }
+
+    &-redirect {
+        max-width: 240px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.50);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        a {
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.custom-width-radio_text {
+    max-width: 200px;
+    margin-right: 40px;
+}
+
+.form-send-heigth {
+    width: 200px;
+    height: 60px;
+
+    background: #DDA74F;
+
+    color: #222;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}

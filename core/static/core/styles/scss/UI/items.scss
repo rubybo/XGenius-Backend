@@ -1,0 +1,44 @@
+.btn {
+    cursor: pointer;
+    padding: 16px 24px;
+    transition: .7s;
+
+    &-background {
+        background: #DDA74F;
+        color: black;
+    }
+
+    &-border {
+        border: 1px solid #DDA74F;
+        background: none;
+        color: #DDA74F;
+    }
+
+    // Buttons Banner
+    &-join {
+        color: #222;
+        font-family: Roboto Regular;
+        font-size: 24px;
+
+    }
+
+    &-features {
+        font-family: Roboto Regular;
+        font-size: 24px;
+    }
+
+    &-reg {
+        max-height: 50px;
+        height: 100%;
+        padding: 15px 50px;
+
+        color: #222;
+        font-family: Roboto;
+        font-size: 24px;
+        white-space: pre;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+}

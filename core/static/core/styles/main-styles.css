@@ -1,0 +1,44 @@
+/* Базовые стили header/footer */
+@import url('./css/base/header.css');
+@import url('./css/base/footer.css');
+
+/* Стили страницы Main */
+
+@import url('./css/main-content/banner.css');
+@import url('./css/main-content/features.css');
+@import url('./css/main-content/howitwork.css');
+@import url('./css/main-content/chooseyourplan.css');
+
+/* Страницы Register */
+@import url('./css/register-content/register.css');
+
+/*  Стили Auth */
+@import url('./css/auth-content/auth.css');
+
+/* UI Стили (Кнопки и т.д.) */
+@import url('./css/UI/items.css');
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoSlab-Medium.ttf");
+    font-weight: 500;
+  }
+
+  /* connect fonts  */
+  @font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/RobotoSlab-Regular.ttf");
+    font-weight: 400;
+  }
+  
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}

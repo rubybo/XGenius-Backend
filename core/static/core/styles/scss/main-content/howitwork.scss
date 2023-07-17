@@ -1,0 +1,41 @@
+.HowItWorks {
+    padding-top: 100px;
+    background: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-img {
+        img {
+            height: 600px;
+        }
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        margin-right: 300px;
+        &_title {
+            margin-bottom: 80px;
+
+            font-family: Roboto;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 5.76px;
+
+            border-bottom: 2px solid #DDA74F;
+            max-width: 325px;
+        }
+
+        &_desc {
+            max-width: 560px;
+            color: #222;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.8px;
+        }
+    }
+}
