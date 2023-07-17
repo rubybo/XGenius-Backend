@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'core/styles/main-styles.css' %}">
+
+    <title>Main - Auth</title>
+</head>
+{% endblock %}
+    {% block content %}
+    <div id="auth">
+        <div class="auth">
+            <div class="auth-title">
+                Welcome back
+            </div>
+            <div class="auth-input">
+                <input type="text" name="Name" id="" placeholder="Login/Email*"
+                    title="Write your login or email adress">
+            </div>
+            <div class="auth-input">
+                <input type="password" name="" id="" placeholder="Password*" title="Write your desired password">
+            </div>
+            <div class="login-line">
+                <div class="form-radio">
+                    <div class="form-radio auth-flex">
+                        <div class="enter">
+                            <label class="custom-radio" style="padding-bottom: 20px;">
+                                <input type="radio" name="radio-button" />
+                                <span class="radio-mark"></span>
+                            </label>
+                        </div>
+                        <div class="form-radio_text">
+                            <span>Remember Me</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forgot-password">
+                    Forgot password?
+                </div>
+            </div>
+            <div class="form-radio auth-flex">
+            </div>
+            <button class="form-send form-send-heigth auth-btn"><span>Login</span></button>
+            <div class="auth-redirect">
+                Don't have an account yet?<a href="{% url 'register' %}"> Sign up</a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

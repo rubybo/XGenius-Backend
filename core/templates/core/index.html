@@ -1,16 +1,187 @@
+{% extends 'core/base.html' %}
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
+{% block main %}
 <head>
-  <meta charset="UTF-8">
-  <!-- <link rel="icon" href="/favicon.ico"> -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XGenius - Service Loading</title>
-  <script type="module" crossorigin src="{% static 'assets/index-8254f191.js' %}"></script>
-  <link rel="stylesheet" href="{% static 'assets/index-254a0471.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'core/styles/main-styles.css' %}">
+
+    <title>XGenius - Main</title>
 </head>
+{% endblock %}
+
+{% block content %}
 <body>
-  <div id="app"></div>
+    <section class="banner">
+        <div class="banner-text">
+            <div class="banner-text_title">
+                Modern solution to old problems
+            </div>
+            <div class="banner-text_desc">
+                Scripted Success, Simplified. Let our genius team handle your homework. Accurate and tailored scripts
+                delivered on time. Affordable rates starting at $9.99 per page. Unleash your academic potential today at
+                GeniusHomework.com.
+            </div>
+            <div class="banner-text_buttons">
+                <a class="btn btn-background btn-join" style="margin-right: 20px" href="#">Join Us</a>
+                <a class="btn btn-border btn-features" href="#">See features</a>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="{% static 'core/img/png/Rectangle 38.png' %}" alt="">
+        </div>
+    </section>
+    <section class="features">
+        <div class="features_title">
+            <h3>Service features</h3>
+        </div>
+        <div class="features-items">
+            <div class="features-item">
+                <div class="features-item_title">
+                    Usage
+                </div>
+                <div class="features-item_desc">
+                    Creating an account, choosing a convenient tariff plan, adding the necessary subjects
+                </div>
+            </div>
+            <div class="features-item">
+                <div class="features-item_title">
+                    IO
+                </div>
+                <div class="features-item_desc">
+                    Write a message to the bot in your personal account and get an instant response!
+                </div>
+            </div>
+            <div class="features-item">
+                <div class="features-item_title">
+                    Get
+                </div>
+                <div class="features-item_desc">
+                    Download the resulting image to your device and send it to the teacher
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="HowItWorks">
+        <div class="HowItWorks-img">
+            <img src="{% static 'core/img/png/Rectangle 41.png' %}" alt="">
+        </div>
+        <div class="HowItWorks-text">
+            <div class="HowItWorks-text_title">
+                How it works
+            </div>
+            <div class="HowItWorks-text_desc">
+                XGenius is a neurobot designed specifically to help students with their homework. The process is simple:
+                you upload a problem and XGenius uses its powerful neural network to solve it instantly. When the task
+                is completed, the bot sends you a photo with a ready-made solution, completely ready for delivery.
+                Students can count on the accuracy and reliability of XGenius, freeing up time for other important
+                activities.
+            </div>
+        </div>
+    </section>
+    <div id="ChooseYourPlan">
+        <div class="trial_title border-color-bottom">
+            Choose your plan
+        </div>
+        <div class="box_trials">
+            <div class="trials">
+                <div class="trial">
+                    <div class="trial-plan">
+                        Free
+                    </div>
+                    <div class="trial-desc" style="margin-bottom: 60px;">
+                        To see how it works
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 1 week usage
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 3 subjects to choose
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 10 requests per day
+                    </div>
+                    <div class="trial-price">
+                        <div class="trial-price-amount">
+                            0.00$
+                        </div>
+                        <div class="trial-price-time">
+                            /week
+                        </div>
+                    </div>
+                    <div class="trial-btn btn">
+                        <a href="">Submit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="trials">
+                <div class="trial">
+                    <div class="trial-plan">
+                        Basic
+                    </div>
+                    <div class="trial-desc" style="margin-bottom: 60px;">
+                        Essential features
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 1 month usage
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 10 subjects to choose
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 25 requests per day
+                    </div>
+                    <div class="trial-price">
+                        <div class="trial-price-amount">
+                            3.50$
+                        </div>
+                        <div class="trial-price-time">
+                            /month
+                        </div>
+                    </div>
+                    <div class="trial-btn btn">
+                        <a href="">Submit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="trials">
+                <div class="trial">
+                    <div class="trial-plan">
+                        Prime
+                    </div>
+                    <div class="trial-desc" style="margin-bottom: 60px;">
+                        Go all in
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> 1 month usage
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> unlim subjects to choose
+                    </div>
+                    <div class="trial-check-usage">
+                        <img src="{% static 'core/img/svg/Black.svg' %}" alt=""> unlim requests per day
+                    </div>
+                    <div class="trial-price">
+                        <div class="trial-price-amount">
+                            12.50$
+                        </div>
+                        <div class="trial-price-time">
+                            /month
+                        </div>
+                    </div>
+                    <div class="trial-btn btn">
+                        <a href="">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+{% endblock %}
 </html>

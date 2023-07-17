@@ -1,0 +1,95 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+{% block main %}
+{% endblock %}
+
+<body>
+    <header class="header">
+        <div class="header__wrap wrap">
+            <div class="header-logo">
+                <img src="{% static 'core/img/svg/logo.svg' %}" alt="">
+            </div>
+            <div class="header-nav">
+                <a href="{% url 'home' %}">Main</a>
+                <a href="#">Trials</a>
+                <a href="#">About Us</a>
+                <a href="#">Reviews</a>
+                <a href="#">F.A.Q</a>
+            </div>
+            <div class="header-account">
+                <a href="{% url 'register' %}">
+                    <img src="{% static 'core/img/svg/Button Account.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="footer-social">
+                <div class="footer-logo">
+                    <img src="{% static 'core/img/svg/logo.svg' %}" alt="">
+                </div>
+                <div class="footer-social-title">
+                    Connect with us
+                </div>
+                <div class="footer-social__items">
+                    <a href=""><img src="{% static 'core/img/svg/Instagram.svg' %}" alt=""></a>
+                    <a href=""><img src="{% static 'core/img/svg/Telegram.svg' %}" alt=""></a>
+                    <a href=""><img src="{% static 'core/img/svg/Threads.svg' %}" alt=""></a>
+                    <a href=""><img src="{% static 'core/img/svg/Twitter.svg' %}" alt=""></a>
+                </div>
+                <div class="footer-rights">
+                    © 2023 XGenius. All right reserved
+                </div>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-item">
+                    <a href="https://github.com/webdevusers">Privacy policy</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://github.com/webdevusers">Developer's github</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://t.me/lvkhd_manager">Owner contact</a>
+                </div>
+            </div>
+            <div class="footer-feedback">
+                <div class="footer-feedback-title">
+                    FeedBack
+                </div>
+                <div class="footer-feedback-form">
+                    <form action="/submit">
+                        <div class="enter">
+                            <input type="text" placeholder="Name...">
+                        </div>
+                        <div class="enter">
+                            <input type="text" placeholder="Email...">
+                        </div>
+                        <div class="enter">
+                            <input type="text" placeholder="Message...">
+                        </div>
+                        <div class="form-radio">
+                            <div class="enter">
+                                <label class="custom-radio">
+                                    <input type="radio" name="radio-button" />
+                                    <span class="radio-mark"></span>
+                                </label>
+                            </div>
+                            <div class="form-radio_text">
+                                <span>I have read the <a href="">privacy policy</a> and agree to the
+                                    processing of my personal data</span>
+                            </div>
+                        </div>
+                        <button class="form-send">Send <img src="{% static 'core/img/svg/send.svg' %}" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
