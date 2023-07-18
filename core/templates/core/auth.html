@@ -14,17 +14,19 @@
 </head>
 {% endblock %}
     {% block content %}
+<form method="post">
+    {% csrf_token %}
     <div id="auth">
         <div class="auth">
             <div class="auth-title">
                 Welcome back
             </div>
             <div class="auth-input">
-                <input type="text" name="Name" id="" placeholder="Login/Email*"
-                    title="Write your login or email adress">
+                 {{ form.username }}
+
             </div>
             <div class="auth-input">
-                <input type="password" name="" id="" placeholder="Password*" title="Write your desired password">
+                {{ form.password }}
             </div>
             <div class="login-line">
                 <div class="form-radio">
@@ -46,10 +48,10 @@
             </div>
             <div class="form-radio auth-flex">
             </div>
-            <button class="form-send form-send-heigth auth-btn"><span>Login</span></button>
+            <button type="submit" class="form-send form-send-heigth auth-btn"><span>Login</span></button>
             <div class="auth-redirect">
                 Don't have an account yet?<a href="{% url 'register' %}"> Sign up</a>
             </div>
         </div>
     </div>
-    {% endblock %}
+</form>   {% endblock %}

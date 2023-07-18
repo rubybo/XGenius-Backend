@@ -14,23 +14,22 @@
 </head>
 {% endblock %}
     {% block content %}
+<form method="post" action="">
+    {% csrf_token %}
     <div id="reg">
         <div class="registration">
             <div class="reg-title">
                 Create new account
             </div>
             <div class="reg-input">
-                <input type="text" name="Name" id="" placeholder="Name">
+               {{ form.username }}
             </div>
             <div class="reg-input">
-                <input type="text" name="Name" id="" placeholder="Email">
-            </div>
+                {{ form.email }}            </div>
             <div class="reg-input">
-                <input type="password" name="" id="" placeholder="Password*" title="Write your desired password">
-            </div>
+                    {{ form.password1 }}            </div>
             <div class="reg-input">
-                <input type="password" name="" id="" placeholder="Confirm password*" title="Re-enter your password">
-            </div>
+                    {{ form.password2 }}             </div>
             <div class="form-radio reg-flex">
                 <div class="enter">
                     <label class="custom-radio">
@@ -42,12 +41,13 @@
                     <span>I have read the <a href="">privacy policy</a> and agree to the
                         processing of my personal data</span>
                 </div>
-                <a href="" class="btn btn-background btn-reg">Sign Up</a>
+                <button type="submit" class="btn btn-background btn-reg">Sign Up</button>
             </div>
             <div class="reg-redirect">
                 Already have an account? <a href="{% url 'login' %}">Log in</a>
             </div>
         </div>
     </div>
+    </form>
     {% endblock %}
 </html>

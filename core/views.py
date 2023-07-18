@@ -14,7 +14,7 @@ class RegisterView(CreateView):
 
 class LoginUser(LoginView):
     form_class = SigninForm
-    template_name = 'core/login.html'
+    template_name = 'core/auth.html'
 
 
 
