@@ -19,6 +19,7 @@
     <div id="reg">
         <div class="registration">
             <div class="reg-title">
+
                 Create new account
             </div>
             <div class="reg-input">
@@ -30,6 +31,8 @@
                     {{ form.password1 }}            </div>
             <div class="reg-input">
                     {{ form.password2 }}             </div>
+
+            <p class="error">{{ form.errors }}</p><br><br>
             <div class="form-radio reg-flex">
                 <div class="enter">
                     <label class="custom-radio">
@@ -37,7 +40,9 @@
                         <span class="radio-mark"></span>
                     </label>
                 </div>
+
                 <div class="form-radio_text">
+
                     <span>I have read the <a href="">privacy policy</a> and agree to the
                         processing of my personal data</span>
                 </div>
