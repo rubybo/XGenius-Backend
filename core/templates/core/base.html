@@ -18,11 +18,20 @@
                 <a href="#">Reviews</a>
                 <a href="#">F.A.Q</a>
             </div>
+            {% if request.user.is_authenticated %}
             <div class="header-account">
-                <a href="{% url 'register' %}">
+                <a href="/accounts/profile/{{ request.user.id }}">
                     <img src="{% static 'core/img/svg/Button Account.svg' %}" alt="">
                 </a>
             </div>
+            {% else %}
+             <div class="header-account">
+                <a href="{% url 'register' %}">
+                    <img src="{% static 'core/img/svg/Button Account.svg' %}" alt="">
+                </a>
+
+             </div>
+             {% endif %}
         </div>
     </header>
     {% block content %}
