@@ -1,5 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, LogoutView
 from .forms import *
 from django.http import HttpResponse
 from django.urls import reverse_lazy
@@ -15,6 +15,11 @@ class RegisterView(CreateView):
 class LoginUser(LoginView):
     form_class = SigninForm
     template_name = 'core/auth.html'
+
+
+class LogoutUser(LogoutView):
+    next_page = '/'
+
 
 
 
