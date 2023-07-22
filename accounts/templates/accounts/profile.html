@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+<body>
+Имя профиля: {{ profile.username }}<br>
+Почта: {{ profile.email }}<br>
+<a href="{% url 'logout' %}"><button>Выйти</button></a>
+</body>
+</html>

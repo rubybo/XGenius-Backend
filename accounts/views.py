@@ -1,12 +1,15 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
-from django.shortcuts import render
 from django.views.generic import DetailView
 
-# Create your views here.
+# Core CBV
 
 
 
-class ProfileView(DetailView):
+class ProfileView(LoginRequiredMixin, DetailView):
     model = User
     template_name = 'accounts/profile.html'
     context_object_name = 'profile'
+
+
+
