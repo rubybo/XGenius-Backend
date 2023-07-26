@@ -1,0 +1,130 @@
+#auth {
+  background: #222;
+}
+
+.form-send span {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.auth-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 560px;
+}
+
+.custom-width-radio_text {
+  max-width: 200px;
+  margin-right: 40px;
+}
+
+.form-send-heigth {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  background: #DDA74F;
+  color: #222;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+
+.auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 245px 0px;
+}
+
+.auth-title {
+  max-width: 355px;
+  width: 100%;
+  margin: 0 auto;
+  color: #DDA74F;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Roboto Slab;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 100px;
+}
+
+.auth-input {
+  max-width: 470px;
+  width: 100%;
+}
+
+.auth-input input {
+  text-align: center;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #f6f6f6;
+  background: none;
+  margin-bottom: 60px;
+  color: rgba(246, 246, 246, 0.5);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.login-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.forgot-password {
+  color: white;
+}
+
+.auth-redirect {
+  padding-top: 32px;
+  max-width: 240px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.auth-redirect a {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

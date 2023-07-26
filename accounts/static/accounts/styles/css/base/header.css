@@ -1,0 +1,35 @@
+.header {
+  background: #111;
+}
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+.header-nav a {
+  color: white;
+  margin-right: 40px;
+  font-size: 20px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border-bottom: 2px solid transparent;
+}
+.header-nav a:last-child {
+  margin-right: 0;
+}
+.header-nav a:hover {
+  border-bottom: 2px solid rgba(246, 246, 246, 0.5);
+}
+.header-account a img {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.header-account a img:hover {
+  border-radius: 15px;
+}

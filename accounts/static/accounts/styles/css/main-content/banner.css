@@ -1,0 +1,78 @@
+.banner {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.banner-text {
+  padding: 270px 100px;
+}
+.banner-text_title {
+  max-width: 480px;
+  width: 100%;
+  color: #F6F6F6;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.banner-text_desc {
+  max-width: 490px;
+  margin: 48px 0px;
+  color: #F6F6F6;
+  font-family: Roboto Regular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.banner-img {
+  max-width: 800px;
+  width: 100%;
+}
+.banner-img img {
+  width: 100%;
+  z-index: 10;
+}
+
+@-webkit-keyframes fly-right-to-left {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes fly-right-to-left {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+.banner-text {
+  -webkit-animation-name: fly-right-to-left;
+          animation-name: fly-right-to-left;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}

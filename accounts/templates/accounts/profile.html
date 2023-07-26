@@ -1,14 +1,135 @@
-
+{% extends 'core/base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
+{% block main %}
 <head>
     <meta charset="UTF-8">
-    <title>Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'accounts/styles/main-styles.css' %}">
+
+    <title>XGenius - Profile</title>
 </head>
+{% endblock %}
+{% block content %}
 <body>
-Имя профиля: {{ profile.username }}<br>
-Почта: {{ profile.email }}<br>
-<a href="{% url 'logout' %}"><button>Выйти</button></a><br>
-<a href="/chat/"><button>Чат</button></a>
+    <div class="profile">
+        <div class="profile__wrap wrap">
+            <div class="profile__pages">
+                <div class="profile__pages-box">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">
+                                <img src="{% static 'accounts/img/svg/send.svg' %}'" alt="">
+                                Chat
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="{% static 'accounts/img/svg/subjects.svg' %}" alt="">
+                                Subjects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="{% static 'accounts/img/svg/trials.svg' %}" alt="">
+                                Trials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="{% static 'accounts/img/svg/settings.svg' %}" alt="">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile__chat">
+                <div class="profile__chat-notes">
+                    <ul>
+                        <li>
+                            <img src="{% static 'accounts/img/svg/account.svg' %}" alt="">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem odio animi totam. Soluta
+                            reiciendis at ullam numquam, deleniti ipsam placeat. Nam laudantium fugiat ratione ut est
+                            numquam voluptates repellendus in.
+                        </li>
+                        <li>
+                            <img src="{% static 'accounts/img/svg/account.svg' %}" alt="">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem odio animi totam. Soluta
+                            reiciendis at ullam numquam, deleniti ipsam placeat. Nam laudantium fugiat ratione ut est
+                            numquam voluptates repellendus in.
+                        </li>
+                        <li>
+                            <img src="{% static 'accounts/img/svg/account.svg' %}" alt="">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem odio animi totam. Soluta
+                            reiciendis at ullam numquam, deleniti ipsam placeat. Nam laudantium fugiat ratione ut est
+                            numquam voluptates repellendus in.
+                        </li>
+                        <li>
+                            <img src="{% static 'accounts/img/svg/account.svg' %}" alt="">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem odio animi totam. Soluta
+                            reiciendis at ullam numquam, deleniti ipsam placeat. Nam laudantium fugiat ratione ut est
+                            numquam voluptates repellendus in.
+                        </li>
+                        <li>
+                            <img src="{% static 'accounts/img/svg/account.svg' %}" alt="">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem odio animi totam. Soluta
+                            reiciendis at ullam numquam, deleniti ipsam placeat. Nam laudantium fugiat ratione ut est
+                            numquam voluptates repellendus in.
+                        </li>
+                        <li>
+                            <img src="{% static 'accounts/img/svg/account.svg' %}" alt="">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem odio animi totam. Soluta
+                            reiciendis at ullam numquam, deleniti ipsam placeat. Nam laudantium fugiat ratione ut est
+                            numquam voluptates repellendus in.
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile__chat-send">
+                    <div class="profile__chat-send__input">
+                        <input type="text" placeholder="Send a message...">
+                    </div>
+                    <div class="profile__chat-send__img">
+                        <img src="{% static 'accounts/img/svg/SendMessage.svg' %}" alt="" style="max-width: 30px;">
+                    </div>
+                </div>
+            </div>
+            <div class="profile__pages">
+                <div class="profile__pages-box">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">
+                                <img src="{% static 'accounts/img/svg/send.svg' %}" alt="">
+                                Chat
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="{% static 'accounts/img/svg/subjects.svg' %}" alt="">
+                                Subjects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="{% static 'accounts/img/svg/trials.svg' %}" alt="">
+                                Trials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="{% static 'accounts/img/svg/settings.svg' %}" alt="">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+{% endblock %}
 </html>

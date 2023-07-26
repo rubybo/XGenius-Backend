@@ -1,0 +1,38 @@
+.header {
+    background: #111;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    &-nav {
+        a {
+            color: white;
+            margin-right: 40px;
+            font-size: 20px;
+            transition: .7s;
+            border-bottom: 2px solid transparent;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                border-bottom: 2px solid rgba(246, 246, 246, 0.50);
+            }
+        }
+    }
+
+    &-account {
+        a img {
+            transition: .7s;
+
+            &:hover {
+                border-radius: 15px;
+            }
+        }
+    }
+}

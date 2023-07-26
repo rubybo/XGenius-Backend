@@ -1,0 +1,58 @@
+.banner {
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text {
+        padding: 270px 100px;
+
+        &_title {
+            max-width: 480px;
+            width: 100%;
+            color: #F6F6F6;
+            font-family: Roboto;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &_desc {
+            max-width: 490px;
+            margin: 48px 0px;
+            color: #F6F6F6;
+            font-family: Roboto Regular;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.8px;
+        }
+    }
+    &-img {
+        max-width: 800px;
+        width: 100%;
+        img {
+            width: 100%;
+            z-index: 10;
+        }
+    }
+}
+
+@keyframes fly-right-to-left {
+    from {
+        transform: translate(100%, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.banner-text {
+    animation-name: fly-right-to-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
