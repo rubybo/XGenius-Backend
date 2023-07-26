@@ -18,6 +18,8 @@
 /* UI Стили (Кнопки и т.д.) */
 @import url('./css/UI/items.css');
 
+@import url('./css/profile-content/profile-content.css');
+
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/RobotoSlab-Medium.ttf");

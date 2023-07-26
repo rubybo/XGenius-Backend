@@ -23,6 +23,6 @@ urlpatterns = [
     path("__debug__/", include("debug_toolbar.urls")),
     path('chat/', include('chat.urls')),
     path('accounts/', include('accounts.urls')),
-    path('forum/', include('forum.urls')),
+#    path('forum/', include('forum.urls')),
     # path('api/', include('rest.urls'))
 ]

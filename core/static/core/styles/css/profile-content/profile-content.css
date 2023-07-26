@@ -1,0 +1,130 @@
+.profile {
+  background: #222;
+}
+.profile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile__pages {
+  max-width: 270px;
+  width: 100%;
+  height: 740px;
+  background: black;
+  border-radius: 25px;
+}
+.profile__pages-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.profile__pages-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  padding-top: 240px;
+}
+.profile__pages-box ul li {
+  color: #F6F6F6;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.profile__pages-box ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.profile__pages-box ul li a img {
+  margin-right: 15px;
+}
+.profile__chat {
+  max-width: 515px;
+  width: 100%;
+}
+.profile__chat-send {
+  border: 2px solid #DDA74F;
+  height: 50px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile__chat-send input {
+  padding-left: 15px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.profile__chat-send input:focus {
+  border: none;
+  outline: none;
+  background-color: unset;
+}
+.profile__chat-send__img {
+  max-width: 30px;
+  width: 100%;
+  padding-right: 15px;
+}
+.profile__chat-send__img img {
+  width: 100%;
+}
+.profile__chat-send__input {
+  padding-left: 15px;
+}
+.profile__chat ul {
+  list-style: none;
+}
+.profile__chat ul li {
+  color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #333;
+  margin-bottom: 30px;
+}
+.profile__chat ul li img {
+  margin-right: 15px;
+}
+
+.active {
+  color: orange !important;
+}
