@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from django.http import request
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,15 +28,14 @@ SECRET_KEY = 'django-insecure-09(t7o^e$h@a$q^ow7tw2a1_9%pw^b&=6&ixl&1s6av-s89h(w
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS=["https://89aa-37-212-22-10.ngrok-free.app"]
+CSRF_TRUSTED_ORIGINS=['https://2dc8-37-212-16-237.ngrok-free.app']
 
 
 INTERNAL_IPS = [
     # ...
     "127.0.0.1",
-    "https://cc93-37-212-9-235.ngrok-free.app",
-    "https://a36f-37-212-22-10.ngrok-free.app",
-    "https://89aa-37-212-22-10.ngrok-free.app"
+    'https://2dc8-37-212-16-237.ngrok-free.app'
+
     # ...
 ]
 
@@ -146,3 +145,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 LOGIN_REDIRECT_URL = "/"
+
+
+
